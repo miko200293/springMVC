@@ -14,12 +14,12 @@ public class TestController {
     public String testView(){
         return "test_view";
     }
-
+//内部重载
     @RequestMapping("/testForward")
     public String testForward(){
         return "forward:/testThymeleafView";
     }
-
+//外部地址重载
     @RequestMapping("/testRedirect")
     public String testRedirect(){
         return "redirect:/testThymeleafView";
