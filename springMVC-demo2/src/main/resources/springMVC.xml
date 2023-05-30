@@ -6,6 +6,9 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+				//打开全局与扫描
         <context:component-scan base-package="com.miko.springMVC.controller"></context:component-scan>
 
 
