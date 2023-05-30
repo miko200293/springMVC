@@ -14,4 +14,15 @@ public class TestController {
     public String testView(){
         return "test_view";
     }
+
+    @RequestMapping("/testForward")
+    public String testForward(){
+        return "forward:/testThymeleafView";
+    }
+
+    @RequestMapping("/testRedirect")
+    public String testRedirect(){
+        return "redirect:/testThymeleafView";
+    }
+
 }
