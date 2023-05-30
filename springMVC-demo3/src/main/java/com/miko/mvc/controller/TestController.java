@@ -19,7 +19,7 @@ public class TestController {
     public String testForward(){
         return "forward:/testThymeleafView";
     }
-//外部地址重载
+//外部地址重载。重载对象在view controller类中
     @RequestMapping("/testRedirect")
     public String testRedirect(){
         return "redirect:/testThymeleafView";
