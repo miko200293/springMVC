@@ -36,7 +36,7 @@ public class RequestMappingController {
     public String testAnt(){
         return "success";
     }
-
+//pathvariable对参数的引用。在springmvc框架中属于少用的方法
     @RequestMapping("/testPath/{id}")
     public String testPath(@PathVariable("id")Integer id){
         System.out.println("id:"+id);
