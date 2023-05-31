@@ -34,6 +34,11 @@
         </property>
     </bean>
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
+
+    <!--开放对静态资源的访问-->
+    <mvc:default-servlet-handler/>
+
+
     <mvc:annotation-driven />
 
 </beans>
