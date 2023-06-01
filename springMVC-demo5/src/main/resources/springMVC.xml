@@ -43,12 +43,27 @@
 
 
     <mvc:interceptors>
+        <ref bean="firstInterceptor"></ref>
+        <ref bean="secondInterceptor"></ref>
+
         <!--<bean class="com.miko.mvc.interceptors.FirstInterceptor"></bean>-->
        <!-- <ref bean="firstInterceptor"></ref>-->
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <mvc:exclude-mapping path="/"/>
-            <ref bean="firstInterceptor"></ref>
-        </mvc:interceptor>
-    </mvc:interceptors>
+        <!-- <mvc:interceptor>
+           <mvc:mapping path="/**"/>
+           <mvc:exclude-mapping path="/"/>
+           <ref bean="firstInterceptor"></ref>
+       </mvc:interceptor>-->
+   </mvc:interceptors>
+
+    <!--配置异常处理-->
+ <!--   <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.ArithmeticException">error</prop>
+            </props>
+        </property>
+        &lt;!&ndash;设置将异常信息共享在请求域钟的键&ndash;&gt;
+        <property name="exceptionAttribute" value="ex"></property>
+    </bean>-->
+
 </beans>
